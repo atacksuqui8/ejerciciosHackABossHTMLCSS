@@ -1,0 +1,190 @@
+
+a:link {
+text-decoration: none;
+}
+body {
+    background-color: cornsilk;
+    font-family: 'Fraunces', serif;
+}
+body > header {
+    text-align: center;
+}
+body > nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+body > nav > ul > li[id='actual'] > a{
+    color:red
+}
+.contenedor-secundario   {
+    display: flex;
+    flex-wrap: wrap;
+   flex-direction: row-reverse;
+  justify-content: center;
+   border: 3px solid red; 
+}
+.contenedor-secundario > aside {
+   flex: 1 1 20%;
+   border-left: 2px solid black;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+} 
+.contenedor-secundario > .contenedor-section {
+   flex-wrap: wrap;
+   flex: 1 1 50%;
+   padding: 10px;
+}
+.contenedor-secundario > .contenedor-formulario {
+   flex-wrap: wrap;
+   flex: 0 1 20%;
+   padding: 10px;
+   align-items: center;
+   justify-content: center;
+}
+.contenedor-secundario > .contenedor-formulario > form {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.contenedor-secundario > .contenedor-formulario > form > div{
+  padding: 5px;
+}
+.contenedor-secundario > .contenedor-section > section > table > thead {
+   background-color: black;
+   color:white;
+   font-weight: bold;
+}
+.contenedor-secundario > .contenedor-section > section > table > tbody > tr>td:first-child {
+   background-color: black;
+   color:white;
+   font-weight: bold;
+}
+.contenedor-secundario > .contenedor-section > section > table > tbody > tr>td:nth-child(2n+1) {
+   background-color: black;
+   color:white;
+   font-weight: bold;
+}
+.contenedor-secundario > .contenedor-section > section > table > tbody > tr>td:nth-child(2n){
+   background-color: black;
+   color:red;
+   font-weight: bold;
+}
+.contenedor-secundario > .contenedor-section > section > ol > li[categoria='canciones']:hover{
+   list-style-type: "\1F3B6";
+}
+.contenedor-secundario > .contenedor-section > section > ol > li[categoria='peliculas']:hover{
+   list-style-type: "\1F4FA";
+}
+.contenedor-secundario > .contenedor-section > section > ol > li[categoria='animales']:hover{
+   list-style-type: "\1F43A";
+}
+.contenedor-secundario > .contenedor-section > section > ol > li[categoria='comida']:hover{
+   list-style-type: "\1F32E";
+}
+.contenedor-secundario > aside > .contenedor-informacion {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   border-bottom: 1px solid;
+}
+.contenedor-secundario > aside > .contenedor-informacion > .contenedor-sobre-mi {
+   text-align: justify;
+}
+.contenedor-secundario > aside > .contenedor-informacion > ol {
+   list-style: none;
+   padding: 0;
+}
+.contenedor-secundario > aside > .contenedor-informacion > ol > li {
+   padding: 3px 0px;
+}
+
+.contenedor-secundario > aside > .contenedor-informacion > ol > li > label {
+   color: black;
+}
+.contenedor-secundario > aside > .contenedor-informacion > .contenedor-imagen > img {
+   height: 150px;
+   margin: 20px;
+   border-radius: 75px;
+}
+.contenedor-secundario > .contenedor-section > section > table {
+  text-align: center;
+} 
+.contenedor-secundario > .contenedor-section > section > iframe {
+   margin-block-start: 0.83em;
+   margin-block-end: 0.83em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+}
+.contenedor-secundario > .contenedor-formulario > form > div > input {
+width: 300px;
+}
+.contenedor-secundario > .contenedor-formulario > form > div > p > textarea {
+   width: 300px;
+   height: 100px;
+   }
+.contenedor-secundario > .contenedor-formulario > form > div > input:required {
+   border: 1px solid red;
+}
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid orange
+    }
+.footer {
+    background-color: bisque;
+}
+.footer > ul {
+list-style: none;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+.footer > ul >li > a {
+     text-decoration: underline; 
+    color: white;
+}
+.footer > ul > li > a:hover {
+    color:gray;
+}
+.footer > ul > li > a:visited {
+    color: gray;
+}
+
+form > div > input[type="submit"] {
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    
+}
+form > div > input[type="submit"]:active {
+    box-shadow: 1px 1px 1px 0px rgba(0,0,10);
+}
+.logo {
+    width:20px;
+    height: 20px;
+    background: url(instagram.svg) no-repeat;
+    background-size: contain;
+    margin-right: 5px;  
+}
+.logo::after{
+    content: "__";
+    color:black;    
+}
+
+.logoLinkedin {
+    width:20px;
+    height: 20px;
+    background: url(linkedin.svg) no-repeat;
+    background-size: contain;
+    margin-right: 5px;
+}
+.logoLinkedin::after {
+    content:"__";
+    color:black;
+}
+
